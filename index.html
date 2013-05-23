@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Write</title>
+    <link rel="stylesheet" type="text/css" href="css/write.css">
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/write.js"></script>
+  </head>
+  <body>
+    <img src="images/write.png" id="settings-button" alt="Settings">
+    <input type="text" id="title">
+    <textarea id="editor"></textarea>
+    <div id="settings">
+      <ul>
+        <li><a href="#settings_files"><span>Documents</span></a></li>
+        <li><a href="#settings_options"><span>Options</span></a></li>
+        <li><a href="#settings_credits"><span>Credits</span></a></li>
+      </ul>
+      <div id="settings_files">
+        <p><strong id="create_new">Create New</strong></p>
+        <p>Other Documents<br><select id="file_picker"></select> <a id="delete">Delete</a></p>
+      </div>
+      <div id="settings_options">
+        <p>Color<br><input id="color" type="text" class="input text"></p>
+        <p>Background<br><input id="background" type="text" class="input text"></p>
+        <p>Font<br><input id="font" type="text" class="input text"></p>
+      </div>
+      <div id="settings_credits">
+        <p><small><a href="http://thenounproject.com/noun/typewriter/#icon-No1966" target="_blank">Typewriter</a> designed by <a href="http://thenounproject.com/Simon Child" target="_blank">Simon Child</a> from The Noun Project</small></p>
+      </div>
+
+    </div>
+  </body>
+</html>
