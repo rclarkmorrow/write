@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
     ,bg: "#ffffff"
     ,fg: "#373737"
     ,ft: "Anonymous Pro"
+    ,sz: "20px"
     ,notes: [{title: "New note",body: "Type."}]
   }
 
@@ -20,6 +21,7 @@ jQuery(document).ready(function($) {
     data.fg = $('#color').val();
     data.bg = $('#background').val();
     data.ft = $('#font').val();
+    data.sz = $('#size').val();
     localStorage.setItem('write_data',JSON.stringify(data));
   }
 
@@ -30,11 +32,13 @@ jQuery(document).ready(function($) {
     $('#color').val(data.fg);
     $('#background').val(data.bg);
     $('#font').val(data.ft);
+    $('#size').val(data.sz);
     $('body').css('background-color',data.bg);
     $('#title,#editor').css({
       color: data.fg
       ,"font-family": data.ft
     })
+    $('#editor').css('font-size',data.sz);
     $('#file_picker').empty();
     for(n=0;n<data.notes.length;n++) {
       $('#file_picker').append($('<option value="' + n + '">'+ data.notes[n].title +'</option>'));
