@@ -9,3 +9,5 @@ Planned features
 -
 
   - JSON import/export
+  - Word count
+  - Evernote integration(?)
